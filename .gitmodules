@@ -1,0 +1,3 @@
+[submodule "dependencies/clover"]
+	path = dependencies/clover
+	url = git@github.com:RobertAlbus/clover.git
