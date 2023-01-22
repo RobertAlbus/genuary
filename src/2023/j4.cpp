@@ -10,8 +10,8 @@
 #include <thread>
 #include <vector>
 
-#include "Config.h"
 #include "Clover.h"
+#include "Config.h"
 
 #include <bits/stdc++.h>
 

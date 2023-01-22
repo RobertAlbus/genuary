@@ -10,8 +10,8 @@
 #include <thread>
 #include <vector>
 
-#include "Config.h"
 #include "Clover.h"
+#include "Config.h"
 
 using namespace Clover::IO;
 using namespace Clover::NodeSimplex;
@@ -79,7 +79,8 @@ int main(int argc, char *argv[]) {
     spreadMultiplier = lfoNormalized * 20;
 
     for (int i = 0; i < numOscs; i++) {
-      float midiNote = baseNote + (detune[i] * 0.01 * (spreadMultiplier * 0.5 + 0.5));
+      float midiNote =
+          baseNote + (detune[i] * 0.01 * (spreadMultiplier * 0.5 + 0.5));
       oscs[i]->freq(Clover::Util::Calc::mtof(midiNote));
     }
   });

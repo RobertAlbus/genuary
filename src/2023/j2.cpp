@@ -10,8 +10,8 @@
 #include <thread>
 #include <vector>
 
-#include "Config.h"
 #include "Clover.h"
+#include "Config.h"
 
 using namespace Clover::IO;
 using namespace Clover::NodeSimplex;
@@ -34,14 +34,8 @@ int main(int argc, char *argv[]) {
 
   //clang-format off
   using namespace Clover::Midi;
-  std::vector<float> notes {
-    Note::E4,
-    Note::Fs4,
-    Note::Gs4,
-    Note::B4,
-    Note::Cs5,
-    Note::D5
-  };
+  std::vector<float> notes{Note::E4, Note::Fs4, Note::Gs4,
+                           Note::B4, Note::Cs5, Note::D5};
   //clang-format on
 
   for (int i = 0; i < numOscs; i++) {
